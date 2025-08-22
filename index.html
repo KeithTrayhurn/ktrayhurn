@@ -1,60 +1,130 @@
 <!-- Damn, you're sneaking around in the code!? :0
  Crazy. 
- Anyways, feel free to explore.
+ Anyways, feel free to explore. -- copied this from freesia LOL
 -->  
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keith Trayhurn</title>
-    <style>
-        body { text-align: center; }
-        main { text-align: left; max-width: 800px; margin: 0 auto; }
-        img { max-width: 100%; height: auto; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between; /* Aligns intro text left, video right */
+      align-items: start;
+      padding: 20px;
+      background-color: #fff;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 600px; /* Or any desired maximum width */
+      margin: 0 auto; /* Centers the container */
+    }
+
+    .intro-text {
+      flex: 1; /* Takes up available space */
+    }
+
+    .video-container {
+      flex: 1; /* Don't grow/shrink */
+      width: 200px; /* Adjust as needed */
+      height: 220px; /* Adjust as needed */
+      background-color: #fff; /* Placeholder for video */
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+      gap: 10px;
+    }
+
+    .grid-item {
+      width: 100%;
+      height: 150px; /* Adjust as needed */
+      background-color: #ccc; /* Placeholder */
+      cursor: pointer;
+      overflow: hidden; /* Hide content that overflows */
+    }
+
+    .art-grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .art-grid-item {
+      width: 100%;
+      height: 150px;
+      background-color: #eee;
+      cursor: pointer;
+    }
+
+
+    /* Media query for mobile */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+      }
+
+      .art-grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <div id="maincontent" style="margin-top:70px">
-    <h2 style="margin-bottom:2px;">I'm Freesia.</h2>
-  <main>
-    <br>
-   <center>"Pretentiousness is a crime." – Karl Popper
-</center>
-    <h3>Who</h3>
-          <blockquote>
-            <ul>Australian-Canadian, 19</ul>
-            <ul>Taught quantum physics as a kid <a href="https://sydneyquantum.org/news/quantum-goes-outback/">[1]</a> </ul>
-            <ul>Born into a startup <a href="https://www.bigredcatskiing.com/">[2]</a></ul>
-            <ul>Started my own at 19 <a href="https://www.startupdaily.net/topic/accelerator/startmate-winter-2025-cohort/">[3]</a></ul></ul>
-             </blockquote>
+  <div class="container">
+    <!-- Your page content goes here -->
+    <header>
+      <div class="intro-text">
+        <h3>KT</h3>
+        <p>> 19, Aussie, Engineer, Artist</p>
+        <p>> Enemy No. 1 of sleep and crazy about everything</p>
+      </div>
+      <div class="video-container">
+        <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/gq05Jrxr0Ls?si=yZLLc84jSgkxuYm8&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </header>
 
-    <h3>What</h3>
-<blockquote>
-  <ul>Working on affordable touch for virtual reality. <br> <strike>The space has done nothing for a long time.</strike> </ul>
-  <ul>Hosting hardware meetups in Australia since February (800+ members)  <a href="https://acesociety.co">[4]</a> </ul>
-</blockquote>
-    <h3>Where</h3>
-<blockquote>
-  <ul>In Sydney, Australia. Have been hopping between here and the Bay Area.</ul>
-  <ul> I post on   <a href="https://www.linkedin.com/in/freesiag/">Linkedin</a>,  <a href="https://www.youtube.com/@FreesiaG">Youtube</a>, and <a href="https://x.com/Freesiagaul">Twitter (new)</a>. <br>
-  </ul>
-</blockquote>
-<h3>When</h3>
-<blockquote> <ul>
-  <br> Moved to 13 schools before uni. Got into quantum physics around 15 after wanting to be a software dev. Built electronics when I realized I couldn't get access to a dilution fridge. Started startup at 19.
-</ul></blockquote>
-    <h3>Why</h3>
-    <blockquote>
-        <ul>We are limited. I want to make beautiful things. </ul> 
-        If you want to properly OSINT me, no worries, my memories are open source. (Down beneath.)
-    </blockquote>
-  
-    <p><a href="aboutme.html">Read my story →</a></p>
-    <p><a href="writing.html">Read some writing →</a></p>
-  </main>
+    <div class="content">
+      <h3>Projects</h3>
+      <div class="grid-container">
+        <div class="grid-item">Project 1</div>
+        <div class="grid-item">Project 2</div>
+        <div class="grid-item">Project 3</div>
+        <div class="grid-item">Project 4</div>
+        <div class="grid-item">Project 5</div>
+        <div class="grid-item">Project 6</div>
+        <!-- Add more project items as needed -->
+      </div>
+
+      <h3>Art :3 ⋆ ｡ ✧ : ･. ﾟ ☁︎ ｡ ⋆ ｡ ﾟ☾ ﾟ</h3>
+      <div class="art-grid-container">
+        <div class="art-grid-item">Art 1</div>
+        <div class="art-grid-item">Art 2</div>
+        <div class="art-grid-item">Art 3</div>
+        <div class="art-grid-item">Art 4</div>
+        <div class="art-grid-item">Art 5</div>
+        <div class="art-grid-item">Art 6</div>
+        <!-- Add more art items as needed -->
+      </div>
+    </div>
   </div>
+
+
 </body>
 </html>
