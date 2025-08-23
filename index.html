@@ -71,7 +71,7 @@
     .grid-image {
       width: 100%;
       display: flex;
-      align-items: center;
+      vertical-align: middle;
     }
     
     .grid-text {
@@ -90,6 +90,7 @@
       height: 150px;
       background-color: #eee;
       cursor: pointer;
+      overflow: hidden;
     }
 
 
@@ -113,13 +114,13 @@
         <h3>KT</h3>
         <p>> 19, Aussie, Engineer, Artist <br>> Sleep is public enemy #1 <br>> Crazy about everything </p>
         <div> 
-          <img id="fullscreenable" src="./images/Normal 2am activities!!!!!.jpg" class="intro-image" alt="2am">
+          <img src="./images/Normal 2am activities!!!!!.jpg" class="intro-image fullscreenable" alt="2am">
         </div>
       </div>
       <div class="content">
       </div>
       <div class="video-container">
-        <iframe width="100%" height="329" src="https://www.youtube-nocookie.com/embed/n4y_xoRcknY?si=7bRdUekS-PHZbj8U&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="329" src="https://www.youtube-nocookie.com/embed/n4y_xoRcknY?si=7bRdUekS-PHZbj8U&amp;controls=0&autoplay=1&mute=1&loop=1&list=n4y_xoRcknY&modestbranding=1" title="YouTube video player" frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </header>
 
@@ -136,21 +137,21 @@
         <a href="./projects/SUMO25/SUMO25.html">
           <div class="grid-item">
             <div class="grid-text">
-              <img src="./projects/SUMO25/SUMO25.png" class="grid-image" alt="SUMO25">
+              <img src="./projects/SUMO25/SUMO25.jpg" class="grid-image" alt="SUMO25">
             </div>
           </div>
         </a>
         <a href="./projects/MATSCI/MATSCI.html">
           <div class="grid-item">
             <div class="grid-text">
-              <img src="./projects/MATSCI/MATSCI.png" class="grid-image" alt="MATSCI">
+              <img src="./projects/MATSCI/MATSCI.jpg" class="grid-image" alt="MATSCI">
             </div>
           </div>
         </a>
         <a href="./projects/FRC2024/FRC2024.html">
           <div class="grid-item">
             <div class="grid-text">
-              <img src="./projects/FRC2024/FRC2024.png" class="grid-image" alt="FRC2024">
+              <img src="./projects/FRC2024/FRC2024.jpg" class="grid-image" alt="FRC2024">
             </div>
           </div>
         </a>
@@ -164,14 +165,14 @@
         <a href="./projects/FRC2025/FRC2025.html">
           <div class="grid-item">
             <div class="grid-text">
-              <img src="./projects/FRC2025/FRC2025.png" class="grid-image" alt="FRC2025">
+              <img src="./projects/FRC2025/FRC2025.jpg" class="grid-image" alt="FRC2025">
             </div>
           </div>
         </a>
         <a href="./projects/FRC2023/FRC2023.html">
           <div class="grid-item">
             <div class="grid-text">
-              <img src="./projects/FRC2023/FRC2023.png" class="grid-image" alt="FRC2023">
+              <img src="./projects/FRC2023/FRC2023.jpg" class="grid-image" alt="FRC2023">
             </div>
           </div>
         </a>
@@ -181,35 +182,28 @@
       <h3>Art :3 ⋆ ｡ ✧ : ･. ﾟ ☁︎ ｡ ⋆ ｡ ﾟ☾ ﾟ</h3>
       <div class="art-grid-container">
         <div class="art-grid-item">
-          <img id="fullscreenable" src="./images/Hiking Gary Beach with sis.jpg" class="grid-image" alt="Hiking Gary Beach with sis">
+          <img src="./images/HSC BOW.jpg" class="grid-image fullscreenable" alt="HSC BOW">
         </div>
         <div class="art-grid-item">
-          <img id="fullscreenable" src="./images/Normal 2am activities!!!!!.jpg" class="intro-image" alt="2am">
+          <img src="./images/Hiking Gary Oil Painting.jpg" class="grid-image fullscreenable" alt="Hiking Gary Oil Painting">
         </div>
-        <div class="art-grid-item">Art 3</div>
-        <div class="art-grid-item">Art 4</div>
         <div class="art-grid-item">
-          <iframe width="100%" src="https://www.youtube-nocookie.com/embed/gq05Jrxr0Ls?si=yZLLc84jSgkxuYm8&autoplay=0&mute=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <img src="./images/Hiking Gary Beach with sis.jpg" class="grid-image fullscreenable" alt="Hiking Gary Beach with sis">
         </div>
-        <div class="art-grid-item">Art 6</div>
+        <div class="art-grid-item">
+          <img src="./images/HSC BOW 2.jpg" class="grid-image fullscreenable" alt="HSC BOW 2">
+        </div>
+        <div class="art-grid-item">
+          <iframe width="100%" src="https://www.youtube-nocookie.com/embed/gq05Jrxr0Ls?si=yZLLc84jSgkxuYm8&amp;controls=0&autoplay=0&mute=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="art-grid-item">
+          <img src="./images/2char1.jpg" class="grid-image fullscreenable" alt="2char1">        
+        </div>
         <!-- Add more art items as needed -->
       </div>
     </div>
   </div>
-  
-  <script>
-    const img = document.getElementById('fullscreenable');
-
-    img.addEventListener('click', function() {
-      if (document.fullscreenElement) {
-        // Exit fullscreen if already in it
-        document.exitFullscreen();
-      } else {
-        // Request fullscreen
-        img.requestFullscreen();
-      }
-    });
-  </script>
+  <script src="./index.js"></script>
 
 </body>
 </html>
