@@ -1,6 +1,6 @@
 <!-- Damn, you're sneaking around in the code!? :0
  Crazy. 
- Anyways, feel free to explore. -- copied this from freesia LOL
+ Anyways, feel free to explore. -- thanks freesia gaul for inspiring the basic asf html styling :pray:
 -->  
 
 <!DOCTYPE html>
@@ -62,16 +62,19 @@
 
     .grid-item {
       width: 100%;
-      height: 150px; /* Adjust as needed */
+      /*height: 150px;  Removed fixed height */
       background-color: #ccc; /* Placeholder */
       cursor: pointer;
       overflow: hidden; /* Hide content that overflows */
+      position: relative; /* For centering */
     }
     
     .grid-image {
       width: 100%;
-      display: flex;
-      vertical-align: middle;
+      height: 100%;
+      object-fit: cover; /* Crucial: Crops and covers */
+      object-position: center; /* Centers the image within the container */
+      display: block; /* Removes any default inline spacing */
     }
     
     .grid-text {
@@ -87,12 +90,12 @@
 
     .art-grid-item {
       width: 100%;
-      height: 150px;
+      /*height: 150px; Removed fixed height */
       background-color: #eee;
       cursor: pointer;
       overflow: hidden;
+      position: relative; /* For centering */
     }
-
 
     /* Media query for mobile */
     @media (max-width: 768px) {
@@ -129,51 +132,37 @@
       <div class="grid-container">
         <a href="./projects/SUMO24/SUMO24.html">
           <div class="grid-item">
-            <div class="grid-text">
-              <img src="./projects/SUMO24/SUMO24.png" class="grid-image" alt="SUMO24">
-            </div>
+            <img src="./projects/SUMO24/SUMO24.png" class="grid-image" alt="SUMO24" title="SUMO24">
           </div>
         </a>
         <a href="./projects/SUMO25/SUMO25.html">
           <div class="grid-item">
-            <div class="grid-text">
-              <img src="./projects/SUMO25/SUMO25.jpg" class="grid-image" alt="SUMO25">
-            </div>
+            <img src="./projects/SUMO25/SUMO25.jpg" class="grid-image" alt="SUMO25" title="SUMO25">
           </div>
         </a>
         <a href="./projects/MATSCI/MATSCI.html">
           <div class="grid-item">
-            <div class="grid-text">
-              <img src="./projects/MATSCI/MATSCI.jpg" class="grid-image" alt="MATSCI">
-            </div>
+            <img src="./projects/MATSCI/MATSCI.jpg" class="grid-image" alt="MATSCI" title="MATSCI">
           </div>
         </a>
         <a href="./projects/FRC2024/FRC2024.html">
           <div class="grid-item">
-            <div class="grid-text">
-              <img src="./projects/FRC2024/FRC2024.jpg" class="grid-image" alt="FRC2024">
-            </div>
+            <img src="./projects/FRC2024/FRC2024.jpg" class="grid-image" alt="FRC2024" title="FRC2024">
           </div>
         </a>
         <a href="./projects/DESN1000/DESN1000.html">
           <div class="grid-item">
-            <div class="grid-text">
-              <img src="./projects/DESN1000/DESN1000.jpg" class="grid-image" alt="DESN1000">
-            </div>
+            <img src="./projects/DESN1000/DESN1000.jpg" class="grid-image" alt="DESN1000" title="DESN1000">
           </div>
         </a>
         <a href="./projects/FRC2025/FRC2025.html">
           <div class="grid-item">
-            <div class="grid-text">
-              <img src="./projects/FRC2025/FRC2025.jpg" class="grid-image" alt="FRC2025">
-            </div>
+            <img src="./projects/FRC2025/FRC2025.jpg" class="grid-image" alt="FRC2025" title="FRC2025">
           </div>
         </a>
         <a href="./projects/FRC2023/FRC2023.html">
           <div class="grid-item">
-            <div class="grid-text">
-              <img src="./projects/FRC2023/FRC2023.jpg" class="grid-image" alt="FRC2023">
-            </div>
+            <img src="./projects/FRC2023/FRC2023.jpg" class="grid-image" alt="FRC2023" title="FRC2023">
           </div>
         </a>
         <!-- Add more project items as needed -->
@@ -182,22 +171,22 @@
       <h3>Art :3 ⋆ ｡ ✧ : ･. ﾟ ☁︎ ｡ ⋆ ｡ ﾟ☾ ﾟ</h3>
       <div class="art-grid-container">
         <div class="art-grid-item">
-          <img src="./images/HSC BOW.jpg" class="grid-image fullscreenable" alt="HSC BOW">
+          <img src="./images/HSC BOW.jpg" class="grid-image fullscreenable" alt="HSC BOW" title="Click to fullscreen">
         </div>
         <div class="art-grid-item">
-          <img src="./images/Hiking Gary Oil Painting.jpg" class="grid-image fullscreenable" alt="Hiking Gary Oil Painting">
+          <img src="./images/Hiking Gary Oil Painting.jpg" class="grid-image fullscreenable" alt="Hiking Gary Oil Painting" title="Click to fullscreen">
         </div>
         <div class="art-grid-item">
-          <img src="./images/Hiking Gary Beach with sis.jpg" class="grid-image fullscreenable" alt="Hiking Gary Beach with sis">
+          <img src="./images/Hiking Gary Beach with sis.jpg" class="grid-image fullscreenable" alt="Hiking Gary Beach with sis" title="Click to fullscreen">
         </div>
         <div class="art-grid-item">
-          <img src="./images/HSC BOW 2.jpg" class="grid-image fullscreenable" alt="HSC BOW 2">
+          <img src="./images/HSC BOW 2.jpg" class="grid-image fullscreenable" alt="HSC BOW 2" title="Click to fullscreen">
         </div>
-        <div class="art-grid-item">
+        <div>
           <iframe width="100%" src="https://www.youtube-nocookie.com/embed/gq05Jrxr0Ls?si=yZLLc84jSgkxuYm8&amp;controls=0&autoplay=0&mute=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="art-grid-item">
-          <img src="./images/2char1.jpg" class="grid-image fullscreenable" alt="2char1">        
+          <img src="./images/2char1.jpg" class="grid-image fullscreenable" alt="2char1" title="Click to fullscreen">
         </div>
         <!-- Add more art items as needed -->
       </div>
