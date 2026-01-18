@@ -1,0 +1,123 @@
+<!-- Damn, you're sneaking around in the code!? :0
+ Crazy. 
+ Anyways, feel free to explore. -- copied this from freesia LOL
+-->  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keith Trayhurn</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between; /* Aligns intro text left, video right */
+      align-items: start;
+      padding: 20px;
+      background-color: #fff;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 660px; /* Or any desired maximum width */
+      margin: 0 auto; /* Centers the container */
+    }
+
+    .intro-text {
+      flex: 1; /* Takes up available space */
+    }
+
+    .video-container {
+      flex: 1; /* Don't grow/shrink */
+      width: 200px; /* Adjust as needed */
+      height: 220px; /* Adjust as needed */
+      background-color: #fff; /* Placeholder for video */
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+      gap: 10px;
+    }
+
+    .grid-item {
+      width: 100%;
+      height: 150px; /* Adjust as needed */
+      background-color: #ccc; /* Placeholder */
+      cursor: pointer;
+      overflow: hidden; /* Hide content that overflows */
+    }
+    
+    .grid-image {
+      width: 100%;
+      display: flex;
+    }
+    
+    .grid-text {
+      justify-content: center; /* Aligns intro text left, video right */
+      align-items: center;
+    }
+
+    .art-grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .art-grid-item {
+      width: 100%;
+      height: 150px;
+      background-color: #eee;
+      cursor: pointer;
+    }
+
+
+    /* Media query for mobile */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+      }
+
+      .art-grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Your page content goes here -->
+    <header>
+      <div class="intro-text">
+        <h3>Reviving FIRST Robotics in Mongolia</h3>
+        <p>> EMU Robotics initiative together with Rockwell Automation and their authorized distributor for Mongolia, Engineering Green Tech </p> 
+        <p>---------------------------------------------------------------------------------------------------------------</p>
+        <p>"We kickstarted a program to nurture the next generation of engineers – organizing training sessions for both teachers and over 60 students aged 10-14 across three schools located in the south Gobi Desert. These schools are located close to the Oyu Tolgoi copper mine operated by Rio Tinto. </p>
+        <p>"The children’s enthusiasm was palpable and in less than 3 days, we organized a FIRST LEGO league competition – where the kids pitted their robots against one another. </p>
+        <p>The EMU Robotics group also visited four schools in the country's capital, Ulaanbaatar, to promote the FIRST program, introducing the program to another 70 students."</p>
+      <img src="./MONG24 A.jpg" class="grid-image fullscreenable" alt="MONG24 A">
+      <img src="./MONG24 B.jpg" class="grid-image fullscreenable" alt="MONG24 B">
+      <img src="./MONG24 C.jpg" class="grid-image fullscreenable" alt="MONG24 C">
+      <img src="./MONG24 D.jpg" class="grid-image fullscreenable" alt="MONG24 D">
+      <img src="./MONG24 E.jpg" class="grid-image fullscreenable" alt="MONG24 E">
+      <iframe width=100% height="315" src="https://www.youtube-nocookie.com/embed/U1jr9RiOenY?si=pOKy1zNGWYwHP_ai" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="content">
+    </header>
+  </div>
+
+  <script src="../../index.js"></script>
+</body>
+</html>
